@@ -40,15 +40,16 @@ export const StarsBackground = ({
   ]);
 
   useEffect(() => {
+    const currentCanvas = canvasRef.current;
+
     const updateStars = () => {
-      if (canvasRef.current) {
-        const canvas = canvasRef.current;
-        const ctx = canvas.getContext("2d");
+      if (currentCanvas) {
+        const ctx = currentCanvas.getContext("2d");
         if (!ctx) return;
 
-        const { width, height } = canvas.getBoundingClientRect();
-        canvas.width = width;
-        canvas.height = height;
+        const { width, height } = currentCanvas.getBoundingClientRect();
+        currentCanvas.width = width;
+        currentCanvas.height = height;
         setStars(generateStars(width, height));
       }
     };
@@ -56,13 +57,13 @@ export const StarsBackground = ({
     updateStars();
 
     const resizeObserver = new ResizeObserver(updateStars);
-    if (canvasRef.current) {
-      resizeObserver.observe(canvasRef.current);
+    if (currentCanvas) {
+      resizeObserver.observe(currentCanvas);
     }
 
     return () => {
-      if (canvasRef.current) {
-        resizeObserver.unobserve(canvasRef.current);
+      if (currentCanvas) {
+        resizeObserver.unobserve(currentCanvas);
       }
     };
   }, [

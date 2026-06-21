@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import ShootingStarsAndStarsBackgroundDemo from "@/components/shooting-stars-and-stars-background-demo";
 
@@ -16,10 +17,14 @@ export default function RootLayout({ children }) {
         <div className="fixed inset-0 z-0 pointer-events-none">
           <ShootingStarsAndStarsBackgroundDemo/>
         </div>
+
+        
+        <Navbar/>
         
         <div className="relative z-10">
           {children}
         </div>
+
       </body>
     </html>
   );
