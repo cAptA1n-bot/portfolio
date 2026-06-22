@@ -11,12 +11,12 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center">
           <div className="mb-4 flex items-center justify-center gap-4">
-          <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-cyan-400" />
-          <p className="uppercase tracking-[0.3em] text-cyan-400">
-            Contact
-          </p>
-          <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-cyan-400" />
-        </div>
+            <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-cyan-400" />
+            <p className="uppercase tracking-[0.3em] text-cyan-400">
+              Contact
+            </p>
+            <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-cyan-400" />
+          </div>
 
           <h2 className="mt-4 text-4xl font-bold md:text-6xl">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
@@ -34,7 +34,7 @@ const Contact = () => {
         {/* Contact Card */}
         <div className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl md:p-12">
           <div className="grid gap-12 lg:grid-cols-2">
-            
+
             {/* Left */}
             <div>
               <h3 className="text-3xl font-bold text-white">
@@ -49,17 +49,19 @@ const Contact = () => {
 
               <div className="mt-10 space-y-5">
                 <a
-                  href="mailto:yourmail@example.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=princeyadav46487@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-cyan-400/40"
                 >
                   <p className="text-sm text-cyan-400">Email</p>
                   <p className="text-white">
-                    yourmail@example.com
+                    princeyadav46487@gmail.com
                   </p>
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/prince-yadav-99bb5b300"
                   target="_blank"
                   className="block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-cyan-400/40"
                 >
@@ -67,12 +69,12 @@ const Contact = () => {
                     LinkedIn
                   </p>
                   <p className="text-white">
-                    linkedin.com/in/yourprofile
+                    linkedin.com/in/prince-yadav-99bb5b300
                   </p>
                 </a>
 
                 <a
-                  href="https://github.com"
+                  href="https://github.com/cAptA1n-bot"
                   target="_blank"
                   className="block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-cyan-400/40"
                 >
@@ -80,7 +82,7 @@ const Contact = () => {
                     GitHub
                   </p>
                   <p className="text-white">
-                    github.com/yourusername
+                    github.com/cAptA1n-bot
                   </p>
                 </a>
               </div>
